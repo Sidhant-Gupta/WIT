@@ -1,15 +1,15 @@
 import express, { NextFunction, Request, Response } from "express";
 import createError from "http-errors";
 
+import mainRouter from "./router/mainRouter"
+
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// app.use("/", indexRouter);
-app.get('/', (req, res) => {
-  res.send('Heyy witty!! ;p ')
-})
+// Routes
+app.use("/", mainRouter);
 
 // catch 404 and forward to error handler
 app.use((req: Request, res: Response, next: NextFunction) => {

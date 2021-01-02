@@ -1,0 +1,18 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:latest",
+        "tslint-config-prettier"
+    ],
+    "jsRules": {},
+    "rules": {
+        "forin": false,
+        "no-console": false,
+        "no-return-await": false,
+        "no-unsafe-finally": false,
+        "ordered-imports": true,
+        "max-classes-per-file": false,
+        "variable-name": false
+    },
+    "rulesDirectory": []
+}

@@ -1,0 +1,2 @@
+Body-parser is a middleware. They help to tidy up the request object before we use them. Express lets us use middleware with the use method.
+
